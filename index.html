@@ -69,7 +69,7 @@ section{padding:68px 0}.section-head{max-width:720px;margin-bottom:28px}.kicker{
 <div class="field"><label for="urgency">Prazo</label><select id="urgency"><option>Normal / programado</option><option>Urgente</option></select></div>
 <div class="field full"><button class="btn purple" id="calculate" type="button">Calcular estimativa</button><div class="error" id="error" role="status"></div></div>
 </div></div>
-<aside class="result"><small>ESTIMATIVA DO SERVIÇO</small><div class="price" id="price">R$ —</div><div class="resultline" id="distance">Aguardando origem e destino.</div><p class="hint" id="formula">Referência: R$ 2,50 por km • mínimo de R$ 25,00.</p><p class="notice">Valor estimado para referência. O orçamento final depende da disponibilidade, tipo de item, urgência, pedágios e confirmação da rota. Para viagens exclusivas, a operação pode considerar retorno sem carga.</p><a class="btn primary" id="whatsappQuote" href="https://wa.me/5551984545750" target="_blank" rel="noopener">Confirmar pelo WhatsApp</a></aside>
+<aside class="result"><small>ESTIMATIVA DO SERVIÇO</small><div class="price" id="price">R$ —</div><div class="resultline" id="distance">Aguardando origem e destino.</div><p class="hint" id="formula">Referência: R$ 1,80 por km • mínimo de R$ 25,00.</p><p class="notice">Valor estimado para referência. O orçamento final depende da disponibilidade, tipo de item, urgência, pedágios e confirmação da rota. Para viagens exclusivas, a operação pode considerar retorno sem carga.</p><a class="btn primary" id="whatsappQuote" href="https://wa.me/5551984545750" target="_blank" rel="noopener">Confirmar pelo WhatsApp</a></aside>
 </div></div></section>
 
 <section class="band" id="acompanhar"><div class="wrap split">
@@ -124,7 +124,7 @@ section{padding:68px 0}.section-head{max-width:720px;margin-bottom:28px}.kicker{
 <footer class="footer"><div class="wrap footerrow"><span>© <span id="year"></span> GS EXPRESS • Torres/RS</span><span>Entregas locais e soluções expressas sob consulta.</span></div></footer>
 <a class="floatwa" href="https://wa.me/5551984545750" target="_blank" rel="noopener" aria-label="Falar com a GS EXPRESS pelo WhatsApp">WhatsApp ↗</a>
 <script>
-const WHATSAPP_NUMBER="5551984545750", RATE_PER_KM=2.50, MINIMUM_FARE=25, MAX_STOPS=8;
+const WHATSAPP_NUMBER="5551984545750", RATE_PER_KM=1.80, MINIMUM_FARE=25, MAX_STOPS=8;
 const $=id=>document.getElementById(id);
 $("year").textContent=new Date().getFullYear();
 $("menu").addEventListener("click",()=>$("navlinks").classList.toggle("open"));
@@ -155,7 +155,7 @@ $("calculate").addEventListener("click",async()=>{
   const chargedKm=km*2,total=Math.max(MINIMUM_FARE,chargedKm*RATE_PER_KM);
   $("price").textContent=money(total);
   $("distance").textContent=`Ida: ${km.toFixed(1).replace(".",",")} km • ${stops.length} parada(s) • cálculo de referência considerando retorno.`;
-  $("formula").textContent=`${chargedKm.toFixed(1).replace(".",",")} km considerados × R$ 2,50/km • mínimo R$ 25,00.`;
+  $("formula").textContent=`${chargedKm.toFixed(1).replace(".",",")} km considerados × R$ 1,80/km • mínimo R$ 25,00.`;
   const msg=`Olá! Quero confirmar um orçamento com a GS EXPRESS.\nRota: ${places.join(" → ")}\nEncomenda: ${$("kind").value}\nPrazo: ${$("urgency").value}\nDistância estimada de ida: ${km.toFixed(1)} km\nEstimativa com retorno considerado: ${money(total)}\nPodem confirmar disponibilidade e valor final?`;
   $("whatsappQuote").href="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg);
  }catch(e){$("price").textContent="R$ —";$("error").textContent=e.message||"Erro ao calcular. Tente novamente."}
