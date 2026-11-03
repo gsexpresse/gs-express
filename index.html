@@ -1,118 +1,170 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#171421">
-  <meta name="description" content="GS EXPRESS: motoboy em Torres/RS, coletas e entregas expressas, viagens exclusivas intermunicipais e interestaduais sob consulta.">
-  <title>GS EXPRESS | Entregas e Coletas Expressas</title>
-  <style>
-    :root{--bg:#100e16;--panel:#1b1824;--panel2:#24202f;--purple:#a879ff;--purple2:#7c4bd6;--white:#f8f6fc;--muted:#b8b1c5;--green:#25d366;--line:#393344}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
-    header{padding:18px 0;border-bottom:1px solid var(--line);background:#14111c}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-size:1.45rem;font-weight:900;letter-spacing:1.5px}.brand span{color:var(--purple)}
-    .nav a.cta{background:var(--purple2);padding:10px 15px;border-radius:10px;font-weight:700;font-size:.9rem}
-    .hero{padding:76px 0 64px;background:radial-gradient(ellipse at 80% 20%,#38245c 0%,transparent 45%),linear-gradient(135deg,#171421,#100e16)}
-    .eyebrow{color:var(--purple);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
-    h1{font-size:clamp(2.3rem,7vw,4.7rem);line-height:1.02;max-width:760px;margin:14px 0}
-    h1 span{color:var(--purple)} .lead{font-size:1.12rem;color:var(--muted);max-width:650px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 18px;border-radius:11px;font-weight:800;border:1px solid var(--line);cursor:pointer}.btn.primary{background:var(--green);color:#082b16;border:0}.btn.secondary{background:var(--panel)}
-    section{padding:58px 0}.section-title{font-size:clamp(1.7rem,4vw,2.5rem);margin:0 0 10px}.sub{color:var(--muted);margin:0 0 28px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service,.calc,.info{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.service h3{margin:8px 0}.service p{color:var(--muted);margin:0}.symbol{font-size:1.6rem;color:var(--purple)}
-    .calc-layout{display:grid;grid-template-columns:1fr .8fr;gap:18px;align-items:start}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:.9rem;font-weight:700;color:#e8e2f0}
-    input,select{width:100%;padding:13px 12px;border-radius:10px;border:1px solid #4a4357;background:#100e16;color:var(--white);font:inherit;min-width:0}input::placeholder{color:#827b8d}
-    .check{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.92rem}.check input{width:18px;height:18px;accent-color:var(--purple)}
-    .result{background:linear-gradient(145deg,#292039,#1b1824);border:1px solid #5b437d;border-radius:16px;padding:23px;position:sticky;top:18px}.result small{color:var(--muted)}.price{font-size:2.5rem;font-weight:900;color:#c6a6ff;margin:5px 0 12px}.hint{font-size:.85rem;color:var(--muted)}.error{color:#ffb3b3;font-size:.9rem;min-height:1.3em}.result .btn{width:100%;margin-top:12px}
-    .notice{font-size:.83rem;color:var(--muted);border-left:3px solid var(--purple);padding-left:12px;margin-top:15px}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:18px}.info p{color:var(--muted)}
-    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
-    @media(max-width:760px){.grid{grid-template-columns:1fr}.calc-layout,.about{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{padding:55px 0}.result{position:static}.nav .navlinks{display:none}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100d18">
+<meta name="description" content="GS EXPRESS: motoboy em Torres/RS, coletas urgentes e entregas exclusivas intermunicipais e interestaduais para pessoas, empresas e transportadoras.">
+<meta property="og:title" content="GS EXPRESS | Logística e Entregas Expressas">
+<meta property="og:description" content="Do atendimento local às entregas de longa distância. Solicite seu orçamento.">
+<title>GS EXPRESS | Logística e Entregas Expressas</title>
+<style>
+:root{--bg:#100d18;--panel:#191522;--panel2:#211b2d;--purple:#a879ff;--purple2:#7543c5;--white:#fbf9ff;--muted:#bdb5ca;--line:#393044;--green:#25d366}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(16,13,24,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:1.3px;font-size:1.15rem}.brand img{height:48px;width:48px;object-fit:cover;border-radius:50%}.brand span{color:var(--purple)}.navlinks{display:flex;gap:23px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--white)}.nav-cta{background:var(--purple2);padding:10px 15px;border-radius:10px;font-weight:800;font-size:.9rem}.menu{display:none;background:none;color:white;border:1px solid var(--line);border-radius:9px;padding:8px 11px}
+.hero{position:relative;overflow:hidden;padding:92px 0 84px;background:radial-gradient(ellipse at 78% 30%,#44276e 0%,transparent 38%),radial-gradient(ellipse at 5% 100%,#281b3c 0%,transparent 35%),linear-gradient(125deg,#181321,#100d18 65%)}.hero:after{content:"";position:absolute;width:380px;height:380px;border:1px solid #8b62c533;border-radius:50%;right:-130px;bottom:-220px;box-shadow:0 0 0 35px #8b62c511,0 0 0 70px #8b62c509}.eyebrow{color:var(--purple);font-size:.78rem;font-weight:900;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(2.65rem,7vw,5.1rem);line-height:1.02;letter-spacing:-2px;max-width:780px;margin:17px 0}.hero h1 span{color:var(--purple)}.lead{font-size:1.12rem;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:13px 18px;border-radius:11px;font-weight:850;border:1px solid var(--line);cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--green);color:#082b16;border:0}.btn.purple{background:var(--purple2);border:0}.btn.ghost{background:#ffffff08}.trustline{display:flex;gap:20px;flex-wrap:wrap;margin-top:32px;color:#d5cde0;font-size:.88rem}.trustline span:before{content:"✓";color:var(--purple);font-weight:900;margin-right:7px}
+section{padding:68px 0}.section-head{max-width:720px;margin-bottom:28px}.kicker{color:var(--purple);font-size:.75rem;text-transform:uppercase;letter-spacing:1.8px;font-weight:900}.title{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.12;margin:8px 0 12px;letter-spacing:-.7px}.sub{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:23px}.iconbox{height:44px;width:44px;display:grid;place-items:center;border-radius:12px;background:#a879ff1b;color:var(--purple);font-size:1.35rem;font-weight:900}.card h3{margin:14px 0 7px;font-size:1.1rem}.card p{color:var(--muted);margin:0;font-size:.94rem}.band{background:#15111e;border-top:1px solid #211b2a;border-bottom:1px solid #211b2a}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}.feature{background:linear-gradient(145deg,#211a30,#17131f);border:1px solid #49365f;border-radius:18px;padding:28px}.feature h3{font-size:1.35rem;margin:8px 0}.feature p,.feature li{color:var(--muted)}.feature ul{padding-left:20px}.feature li{margin:7px 0}
+.calc-layout{display:grid;grid-template-columns:1fr .78fr;gap:18px;align-items:start}.calc,.result,.panel{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:24px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:.88rem;font-weight:800;color:#e9e3f1}input,select,textarea{width:100%;padding:12px 13px;border-radius:10px;border:1px solid #4a4057;background:#100d18;color:var(--white);min-width:0}textarea{min-height:100px;resize:vertical}input::placeholder,textarea::placeholder{color:#81788e}.stoprow{display:flex;gap:8px;margin:8px 0}.stoprow button{white-space:nowrap;padding:8px 11px}.hint{color:var(--muted);font-size:.84rem}.result{background:linear-gradient(145deg,#292039,#191522);border-color:#5b437d;position:sticky;top:94px}.result small{color:var(--muted);font-weight:800;letter-spacing:1px}.price{font-size:2.55rem;font-weight:950;color:#c6a6ff;margin:5px 0}.result .btn{width:100%;margin-top:12px}.error{color:#ffaaaa;font-size:.88rem;min-height:1.3em}.notice{font-size:.82rem;color:var(--muted);border-left:3px solid var(--purple);padding-left:12px;margin-top:15px}.resultline{font-size:.9rem;color:#e5ddec}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{padding:20px;border-left:2px solid var(--purple);background:#ffffff05;border-radius:0 13px 13px 0}.step b{display:block;margin-bottom:5px}.step p{margin:0;color:var(--muted);font-size:.92rem}
+.reviewbox{display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(110deg,#251b35,#17131f);border:1px solid #49365f;border-radius:18px;padding:26px}.stars{color:#ffc95c;letter-spacing:3px;font-size:1.25rem}.rating{font-size:2rem;font-weight:950}.reviewbox p{color:var(--muted);margin:3px 0 0}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}.faq summary{font-weight:800;cursor:pointer}.faq details p{color:var(--muted);margin-bottom:0;font-size:.92rem}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.contact-info{background:linear-gradient(145deg,#241b33,#17131f);border:1px solid #49365f;border-radius:17px;padding:25px}.contact-info p{color:var(--muted)}.contact-form{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:24px}.footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.88rem}.footerrow{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.floatwa{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--green);color:#082b16;font-weight:950;padding:13px 16px;border-radius:50px;box-shadow:0 8px 30px #0008}
+
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.photo-grid figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}.photo-grid img{display:block;width:100%;height:300px;object-fit:cover}.photo-grid figcaption{padding:12px 14px;font-weight:800;font-size:.92rem}.photo-note{color:var(--muted);margin:18px 0 0}.photo-note a{color:var(--purple);font-weight:850}
+@media(max-width:800px){.photo-grid{grid-template-columns:1fr 1fr}.photo-grid img{height:250px}}
+@media(max-width:520px){.photo-grid{grid-template-columns:1fr}.photo-grid img{height:auto;max-height:420px;object-fit:cover}}
+@media(max-width:800px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#15111e;padding:18px 5%;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.grid{grid-template-columns:1fr 1fr}.calc-layout,.split,.contact-grid{grid-template-columns:1fr}.result{position:static}.steps{grid-template-columns:1fr}.faq{grid-template-columns:1fr}.hero{padding:66px 0}.reviewbox{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.calc,.result,.panel,.contact-form{padding:18px}.hero h1{letter-spacing:-1.2px}.brand{font-size:1rem}.brand img{height:42px;width:42px}}
+</style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="#" aria-label="GS EXPRESS"><img src="logo-gs-express.jpeg" alt="Logo GS EXPRESS" style="height:54px;width:54px;object-fit:cover;border-radius:50%;vertical-align:middle;margin-right:10px"> <span>GS</span> EXPRESS</a><div class="navlinks"><a href="#servicos">Serviços</a>　<a href="#orcamento">Orçamento</a>　<a href="#contato">Contato</a></div><a class="cta" href="#orcamento">Calcular entrega</a></div></header>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio"><img src="logo-gs-express.jpeg" alt="Logo GS EXPRESS"><span>GS</span> EXPRESS</a>
+<nav class="navlinks" id="navlinks"><a href="#servicos">Serviços</a><a href="#empresas">Empresas</a><a href="#orcamento">Orçamento</a><a href="#acompanhar">Entregas</a><a href="#contato">Contato</a><a href="https://www.instagram.com/gs_expresse/" target="_blank" rel="noopener">Instagram ↗</a></nav>
+<a class="nav-cta" href="#orcamento">Solicitar orçamento</a><button class="menu" id="menu" aria-label="Abrir menu">☰</button>
+</div></header>
 <main>
-  <section class="hero"><div class="wrap">
-    <div class="eyebrow">Torres/RS • Coletas • Entregas expressas</div>
-    <h1>Sua entrega.<br><span>Nosso compromisso.</span></h1>
-    <p class="lead">Motoboy em Torres e região, coletas em outras cidades e viagens exclusivas intermunicipais e interestaduais sob consulta.</p>
-    <div class="hero-actions"><a class="btn primary" href="#orcamento">Calcular orçamento</a><a class="btn secondary" href="#servicos">Conhecer serviços</a></div>
-  </div></section>
-  <section id="servicos"><div class="wrap">
-    <h2 class="section-title">Soluções em entregas</h2><p class="sub">Atendimento para pessoas, comércios, empresas e transportadoras.</p>
-    <div class="grid">
-      <article class="service"><div class="symbol">⌖</div><h3>Motoboy local</h3><p>Coletas e entregas em Torres/RS e cidades da região.</p></article>
-      <article class="service"><div class="symbol">↗</div><h3>Viagens exclusivas</h3><p>Entregas urgentes e diretas para outros municípios, sob consulta.</p></article>
-      <article class="service"><div class="symbol">▣</div><h3>Atendimento empresarial</h3><p>Coletas programadas e apoio terceirizado para empresas e transportadoras.</p></article>
-    </div>
-  </div></section>
-  <section id="orcamento" style="background:#15121d"><div class="wrap">
-    <h2 class="section-title">Calcule uma estimativa</h2><p class="sub">Informe origem e destino. A distância será calculada por rota rodoviária.</p>
-    <div class="calc-layout">
-      <div class="calc"><div class="fields">
-        <div class="field full"><label for="origin">Cidade de origem</label><input id="origin" placeholder="Ex.: Torres, RS" autocomplete="off"></div>
-        <div class="field full"><label for="destination">Cidade de destino</label><input id="destination" placeholder="Ex.: Porto Alegre, RS" autocomplete="off"></div>
-        <div class="field"><label for="kind">Tipo de encomenda</label><select id="kind"><option>Documento</option><option>Peça</option><option>Pequena encomenda</option><option>Outro item compatível com moto</option></select></div>
-        <div class="field"><label for="urgency">Prazo</label><select id="urgency"><option>Normal / programado</option><option>Urgente</option></select></div>
-        <div class="field full"><label class="check"><input type="checkbox" id="emptyReturn" checked> Vou retornar vazio (calcular ida e volta)</label></div>
-        <div class="field full"><button class="btn primary" id="calculate" type="button">Calcular estimativa</button><div class="error" id="error" role="status"></div></div>
-      </div></div>
-      <aside class="result"><small>ESTIMATIVA DO SERVIÇO</small><div class="price" id="price">R$ —</div><div id="distance" class="hint">Aguardando origem e destino.</div><div class="hint" id="formula">Tarifa: R$ 2,50 por km rodado • mínimo: R$ 25,00.</div><p class="notice">Estimativa automática, não é preço final. O orçamento será confirmado após verificar disponibilidade, tipo de item, condições de acesso, urgência e eventual pedágio.</p><a class="btn primary" id="whatsapp" href="#" target="_blank" rel="noopener">Solicitar pelo WhatsApp</a></aside>
-    </div>
-  </div></section>
-  <section id="contato"><div class="wrap about">
-    <div class="info"><h2 class="section-title">GS EXPRESS</h2><p>Base em Torres/RS. Atendimento local e viagens para outras cidades mediante consulta de disponibilidade e orçamento.</p><p><strong>Atendemos:</strong> pessoas físicas, comércios, empresas e transportadoras.</p></div>
-    <div class="info"><h2 class="section-title">Fale com a gente</h2><p>Peça uma cotação ou consulte disponibilidade para sua coleta e entrega.</p><a class="btn primary" id="contactButton" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a><p class="notice">WhatsApp cadastrado: (51) 98454-5750.</p></div>
-  </div></section>
-</main>
-<footer><div class="wrap">© <span id="year"></span> GS EXPRESS • Torres/RS</div></footer>
-<script>
-  // CONFIGURE: coloque o número com DDI e DDD, somente números. Ex.: 5551999999999
-  const WHATSAPP_NUMBER = "5551984545750";
-  const RATE_PER_KM = 2.50;
-  const MINIMUM_FARE = 25.00;
-  const $ = id => document.getElementById(id);
-  let lastQuote = null;
-  $("year").textContent = new Date().getFullYear();
+<section class="hero" id="inicio"><div class="wrap">
+<div class="eyebrow">Torres/RS • Coletas • Entregas expressas</div>
+<h1>Sua entrega.<br><span>Nossa responsabilidade.</span></h1>
+<p class="lead">Do atendimento local às viagens exclusivas entre cidades. Soluções ágeis para pessoas, comércios, empresas e transportadoras.</p>
+<div class="actions"><a class="btn primary" href="#orcamento">↗ Calcular orçamento</a><a class="btn ghost" href="#empresas">Soluções para empresas</a><a class="btn ghost" href="https://www.instagram.com/gs_expresse/" target="_blank" rel="noopener">Instagram ↗</a></div>
+<div class="trustline"><span>Atendimento personalizado</span><span>Coletas urgentes</span><span>Viagens sob consulta</span></div>
+</div></section>
 
-  function money(n){return n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});}
-  function setWhatsApp(message){
-    if(!/^\d{12,13}$/.test(WHATSAPP_NUMBER)){ $("error").textContent="Configure seu número no arquivo do site para ativar o WhatsApp."; return; }
-    const url="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message);
-    $("whatsapp").href=url; $("contactButton").href="https://wa.me/"+WHATSAPP_NUMBER;
-  }
-  $("calculate").addEventListener("click", async ()=>{
-    const origin=$("origin").value.trim(), destination=$("destination").value.trim();
-    $("error").textContent=""; $("price").textContent="Calculando…"; $("distance").textContent="";
-    if(!origin||!destination){$("error").textContent="Preencha a cidade de origem e a de destino."; $("price").textContent="R$ —"; return;}
-    if(origin.toLowerCase()===destination.toLowerCase()){$("error").textContent="Origem e destino precisam ser diferentes."; $("price").textContent="R$ —"; return;}
-    try{
-      const geo=async q=>{
-        const u="https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q="+encodeURIComponent(q+", Brasil");
-        const r=await fetch(u,{headers:{"Accept-Language":"pt-BR"}}); if(!r.ok) throw Error("Falha na busca de cidades.");
-        const a=await r.json(); if(!a.length) throw Error("Não encontrei uma das cidades. Tente informar também o estado (UF).");
-        return [Number(a[0].lon),Number(a[0].lat)];
-      };
-      const [a,b]=await Promise.all([geo(origin),geo(destination)]);
-      const routeUrl=`https://router.project-osrm.org/route/v1/driving/${a[0]},${a[1]};${b[0]},${b[1]}?overview=false`;
-      const rr=await fetch(routeUrl); if(!rr.ok) throw Error("Não foi possível calcular a rota agora.");
-      const rd=await rr.json(); if(rd.code!=="Ok"||!rd.routes?.length) throw Error("Rota rodoviária não encontrada.");
-      const km=rd.routes[0].distance/1000;
-      const empty=$("emptyReturn").checked;
-      const chargedKm=km*(empty?2:1);
-      const total=Math.max(MINIMUM_FARE,chargedKm*RATE_PER_KM);
-      const urgency=$("urgency").value, kind=$("kind").value;
-      lastQuote={origin,destination,km,chargedKm,total,empty,kind,urgency};
-      $("price").textContent=money(total);
-      $("distance").textContent=`Rota aproximada: ${km.toFixed(1).replace(".",",")} km de ida • ${chargedKm.toFixed(1).replace(".",",")} km considerados na cobrança${empty?" (ida e volta)":""}.`;
-      $("formula").textContent=`Cálculo: ${chargedKm.toFixed(1).replace(".",",")} km × R$ 2,50, respeitando o mínimo de R$ 25,00.`;
-      const msg=`Olá! Quero confirmar um orçamento com a GS EXPRESS.%0AOrigem: ${origin}%0ADestino: ${destination}%0AEncomenda: ${kind}%0APrazo: ${urgency}%0ADistância de ida estimada: ${km.toFixed(1)} km%0ARetorno vazio: ${empty?"Sim":"Não"}%0AEstimativa: ${money(total)}%0AGostaria de confirmar disponibilidade e valor final.`;
-      const plain=`Olá! Quero confirmar um orçamento com a GS EXPRESS.\nOrigem: ${origin}\nDestino: ${destination}\nEncomenda: ${kind}\nPrazo: ${urgency}\nDistância de ida estimada: ${km.toFixed(1)} km\nRetorno vazio: ${empty?"Sim":"Não"}\nEstimativa: ${money(total)}\nGostaria de confirmar disponibilidade e valor final.`;
-      if(/^\d{12,13}$/.test(WHATSAPP_NUMBER)) $("whatsapp").href="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(plain);
-      else $("error").textContent="Estimativa calculada. Para enviar pelo WhatsApp, confira o número configurado no site.";
-    }catch(e){$("price").textContent="R$ —";$("error").textContent=e.message||"Erro ao calcular. Tente novamente mais tarde.";}
-  });
-  if(/^\d{12,13}$/.test(WHATSAPP_NUMBER)){ $("contactButton").href="https://wa.me/"+WHATSAPP_NUMBER; }
+<section id="servicos"><div class="wrap">
+<div class="section-head"><div class="kicker">O que fazemos</div><h2 class="title">Logística expressa para diferentes necessidades</h2><p class="sub">Atendimento próximo em Torres e região, com disponibilidade para demandas de outras cidades mediante consulta.</p></div>
+<div class="grid">
+<article class="card"><div class="iconbox">⌖</div><h3>Motoboy local</h3><p>Coletas e entregas rápidas em Torres/RS e cidades próximas atendidas.</p></article>
+<article class="card"><div class="iconbox">➜</div><h3>Viagens exclusivas</h3><p>Transporte direto para outros municípios, com cotação conforme distância e disponibilidade.</p></article>
+<article class="card"><div class="iconbox">▣</div><h3>Coletas urgentes</h3><p>Retirada de documentos, peças e pequenas encomendas compatíveis com transporte em motocicleta.</p></article>
+<article class="card"><div class="iconbox">▤</div><h3>Transportadoras</h3><p>Apoio terceirizado para coletas, entregas complementares e demandas específicas.</p></article>
+<article class="card"><div class="iconbox">↻</div><h3>Serviços programados</h3><p>Possibilidade de organizar rotas recorrentes e coletas agendadas para empresas.</p></article>
+<article class="card"><div class="iconbox">＋</div><h3>Demandas especiais</h3><p>Conte o que precisa transportar e consulte a viabilidade do serviço.</p></article>
+</div></div></section>
+
+<section class="band" id="empresas"><div class="wrap split">
+<div class="feature"><div class="kicker">Parcerias comerciais</div><h2 class="title">Sua operação precisa de um parceiro ágil?</h2><p>A GS EXPRESS está disponível para conversar sobre apoio operacional, coletas e entregas terceirizadas.</p><ul><li>Atendimento para empresas e transportadoras</li><li>Coletas pontuais ou programadas</li><li>Rotas locais e viagens sob consulta</li><li>Orçamento conforme volume e frequência</li></ul><a class="btn purple" href="#form-empresa">Quero conversar sobre parceria</a></div>
+<div class="feature"><div class="kicker">Como funciona</div><h3>Uma contratação simples e direta</h3><div class="steps" style="grid-template-columns:1fr"><div class="step"><b>1. Envie sua demanda</b><p>Informe cidades, tipo de item, frequência e prazo.</p></div><div class="step"><b>2. Avaliamos a operação</b><p>Verificamos distância, disponibilidade e condições do serviço.</p></div><div class="step"><b>3. Receba uma proposta</b><p>Alinhamos valores e detalhes diretamente pelo WhatsApp.</p></div></div></div>
+</div></section>
+
+<section id="orcamento"><div class="wrap">
+<div class="section-head"><div class="kicker">Calculadora de rota</div><h2 class="title">Monte seu trajeto e peça uma estimativa</h2><p class="sub">Adicione quantas paradas precisar. A rota será calculada na ordem informada.</p></div>
+<div class="calc-layout"><div class="calc"><div class="fields">
+<div class="field full"><label for="origin">Origem (cidade/UF)</label><input id="origin" placeholder="Ex.: Torres, RS"></div>
+<div class="field full"><label>Paradas intermediárias (opcional)</label><div id="stops"></div><button class="btn ghost" id="addStop" type="button">＋ Adicionar parada</button></div>
+<div class="field full"><label for="destination">Destino final (cidade/UF)</label><input id="destination" placeholder="Ex.: Florianópolis, SC"></div>
+<div class="field"><label for="kind">Tipo de encomenda</label><select id="kind"><option>Documento</option><option>Peça</option><option>Pequena encomenda</option><option>Outro item compatível com moto</option></select></div>
+<div class="field"><label for="urgency">Prazo</label><select id="urgency"><option>Normal / programado</option><option>Urgente</option></select></div>
+<div class="field full"><button class="btn purple" id="calculate" type="button">Calcular estimativa</button><div class="error" id="error" role="status"></div></div>
+</div></div>
+<aside class="result"><small>ESTIMATIVA DO SERVIÇO</small><div class="price" id="price">R$ —</div><div class="resultline" id="distance">Aguardando origem e destino.</div><p class="hint" id="formula">Referência: R$ 2,50 por km • mínimo de R$ 25,00.</p><p class="notice">Valor estimado para referência. O orçamento final depende da disponibilidade, tipo de item, urgência, pedágios e confirmação da rota. Para viagens exclusivas, a operação pode considerar retorno sem carga.</p><a class="btn primary" id="whatsappQuote" href="https://wa.me/5551984545750" target="_blank" rel="noopener">Confirmar pelo WhatsApp</a></aside>
+</div></div></section>
+
+<section class="band" id="acompanhar"><div class="wrap split">
+<div><div class="kicker">Pós-atendimento</div><h2 class="title">Precisa consultar uma entrega?</h2><p class="sub">Informe o código ou os dados do serviço. Nossa equipe confirma manualmente o andamento pelo WhatsApp.</p></div>
+<div class="panel"><div class="field"><label for="tracking">Código ou identificação da entrega</label><input id="tracking" placeholder="Ex.: GS-001 ou nome do destinatário"></div><a class="btn primary" id="trackBtn" href="https://wa.me/5551984545750" target="_blank" rel="noopener" style="margin-top:12px;width:100%">Consultar entrega pelo WhatsApp</a><p class="hint">Consulta manual. O site ainda não possui rastreamento automático em tempo real.</p></div>
+</div></section>
+
+
+<section id="estrutura" class="band"><div class="wrap">
+<div class="section-head"><div class="kicker">Nossa operação</div><h2 class="title">Estrutura real da GS EXPRESS</h2><p class="sub">Imagens da nossa operação publicadas no perfil da empresa no Google.</p></div>
+<div class="photo-grid">
+<figure><img src="gs-moto-start.jpg" alt="Motocicleta utilizada pela GS EXPRESS" loading="lazy"><figcaption>Motocicleta da operação</figcaption></figure>
+<figure><img src="gs-moto-bag.jpg" alt="Motocicleta da GS EXPRESS equipada com bag de entregas" loading="lazy"><figcaption>Equipamento para entregas</figcaption></figure>
+<figure><img src="gs-moto-noite.jpg" alt="Motocicleta e equipamento de entregas da GS EXPRESS" loading="lazy"><figcaption>Atendimento e entregas</figcaption></figure>
+</div>
+<p class="photo-note">Acompanhe também fotos e atualizações no <a href="https://www.instagram.com/gs_expresse/" target="_blank" rel="noopener">@gs_expresse</a>.</p>
+</div></section>
+
+<section id="avaliacoes"><div class="wrap">
+<div class="section-head"><div class="kicker">Confiança se constrói</div><h2 class="title">A experiência de quem já contratou</h2><p class="sub">Confira as avaliações públicas da GS EXPRESS no Google.</p></div>
+<div class="reviewbox"><div><div class="stars">★★★★★</div><div class="rating">5,0 <span style="font-size:1rem;color:var(--muted);font-weight:600">no Google</span></div><p>Nota e quantidade de avaliações podem mudar conforme novas avaliações forem publicadas.</p></div><a class="btn ghost" href="https://www.google.com/search?q=GS+EXPRESS+Torres+RS" target="_blank" rel="noopener">Ver perfil no Google ↗</a></div>
+</div></section>
+
+<section class="band" id="como-funciona"><div class="wrap"><div class="section-head"><div class="kicker">Simples e direto</div><h2 class="title">Como solicitar uma entrega</h2></div><div class="steps">
+<div class="step"><b>01 — Informe a rota</b><p>Preencha origem, destino e eventuais paradas na calculadora.</p></div>
+<div class="step"><b>02 — Solicite a cotação</b><p>Envie os dados pelo WhatsApp para confirmar disponibilidade e valor.</p></div>
+<div class="step"><b>03 — Combine a coleta</b><p>Alinhe horário, detalhes do item e endereço de retirada.</p></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap"><div class="section-head"><div class="kicker">Dúvidas frequentes</div><h2 class="title">Antes de solicitar</h2></div><div class="faq">
+<details><summary>Quais cidades são atendidas?</summary><p>O atendimento local cobre Torres/RS e localidades próximas. Viagens para outras cidades são avaliadas sob consulta.</p></details>
+<details><summary>Quais itens podem ser transportados?</summary><p>Documentos, peças e pequenas encomendas compatíveis com capacidade, segurança e legislação aplicável ao transporte em motocicleta.</p></details>
+<details><summary>O preço da calculadora é definitivo?</summary><p>Não. É uma estimativa baseada na distância rodoviária. O valor final é confirmado após análise da operação.</p></details>
+<details><summary>A GS EXPRESS atende empresas?</summary><p>Sim. Empresas e transportadoras podem enviar demandas pontuais, recorrentes ou propostas de parceria.</p></details>
+</div></div></section>
+
+<section class="band" id="contato"><div class="wrap">
+<div class="section-head"><div class="kicker">Fale com a GS EXPRESS</div><h2 class="title">Vamos organizar sua próxima entrega?</h2><p class="sub">Envie uma solicitação ou converse diretamente pelo WhatsApp.</p></div>
+<div class="contact-grid">
+<div class="contact-info"><h3>GS EXPRESS</h3><p>Base em Torres/RS • Atendimento local e viagens mediante consulta.</p><p><strong>WhatsApp</strong><br>(51) 98454-5750</p><p><strong>Atendimento</strong><br>Pessoas físicas, comércios, empresas e transportadoras.</p><a class="btn primary" href="https://wa.me/5551984545750" target="_blank" rel="noopener">Abrir WhatsApp</a><a class="btn ghost" style="margin-top:10px" href="https://www.instagram.com/gs_expresse/" target="_blank" rel="noopener">Instagram @gs_expresse ↗</a></div>
+<form class="contact-form" id="form-empresa">
+<h3 style="margin-top:0">Solicitação para empresas</h3><div class="fields">
+<div class="field"><label for="company">Empresa / responsável</label><input id="company" required placeholder="Nome"></div>
+<div class="field"><label for="phone">Telefone</label><input id="phone" required placeholder="DDD + número"></div>
+<div class="field"><label for="city">Cidade / região</label><input id="city" placeholder="Onde precisa do serviço?"></div>
+<div class="field"><label for="frequency">Frequência</label><select id="frequency"><option>Serviço pontual</option><option>Semanal</option><option>Diária</option><option>Conforme demanda</option></select></div>
+<div class="field full"><label for="demand">Conte sobre a necessidade</label><textarea id="demand" placeholder="Tipo de coleta, entrega, volume, rotas e prazos..." required></textarea></div>
+<div class="field full"><button class="btn purple" type="submit">Enviar solicitação pelo WhatsApp</button><p class="hint">O formulário abre uma conversa no WhatsApp com os dados preenchidos. Nenhum dado é armazenado neste site.</p></div>
+</div></form>
+</div></div></section>
+</main>
+<footer class="footer"><div class="wrap footerrow"><span>© <span id="year"></span> GS EXPRESS • Torres/RS</span><span>Entregas locais e soluções expressas sob consulta.</span></div></footer>
+<a class="floatwa" href="https://wa.me/5551984545750" target="_blank" rel="noopener" aria-label="Falar com a GS EXPRESS pelo WhatsApp">WhatsApp ↗</a>
+<script>
+const WHATSAPP_NUMBER="5551984545750", RATE_PER_KM=2.50, MINIMUM_FARE=25, MAX_STOPS=8;
+const $=id=>document.getElementById(id);
+$("year").textContent=new Date().getFullYear();
+$("menu").addEventListener("click",()=>$("navlinks").classList.toggle("open"));
+document.querySelectorAll("#navlinks a").forEach(a=>a.addEventListener("click",()=>$("navlinks").classList.remove("open")));
+let stopCounter=0;
+function addStop(){
+ if(document.querySelectorAll(".stop-input").length>=MAX_STOPS){$("error").textContent="Limite de 8 paradas intermediárias.";return}
+ stopCounter++; const row=document.createElement("div");row.className="stoprow";
+ const input=document.createElement("input");input.className="stop-input";input.placeholder=`Parada ${stopCounter} (cidade/UF)`;input.setAttribute("aria-label",`Parada ${stopCounter}`);
+ const btn=document.createElement("button");btn.type="button";btn.className="btn ghost";btn.textContent="Remover";btn.addEventListener("click",()=>row.remove());
+ row.append(input,btn);$("stops").append(row);
+}
+$("addStop").addEventListener("click",addStop);
+const money=n=>n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+$("calculate").addEventListener("click",async()=>{
+ const origin=$("origin").value.trim(),destination=$("destination").value.trim();
+ const stops=[...document.querySelectorAll(".stop-input")].map(x=>x.value.trim()).filter(Boolean);
+ $("error").textContent="";$("price").textContent="Calculando…";$("distance").textContent="";
+ if(!origin||!destination){$("error").textContent="Informe a origem e o destino final."; $("price").textContent="R$ —";return}
+ const places=[origin,...stops,destination];
+ try{
+  const geo=async q=>{const r=await fetch("https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q="+encodeURIComponent(q+", Brasil"),{headers:{"Accept-Language":"pt-BR"}});if(!r.ok)throw Error("Busca de cidades indisponível no momento.");const a=await r.json();if(!a.length)throw Error("Não encontrei "+q+". Informe também a UF.");return [Number(a[0].lon),Number(a[0].lat)]};
+  const coords=[];for(const p of places)coords.push(await geo(p));
+  const url="https://router.project-osrm.org/route/v1/driving/"+coords.map(c=>c.join(",")).join(";")+"?overview=false&steps=false";
+  const rr=await fetch(url);if(!rr.ok)throw Error("Não foi possível calcular a rota agora.");const data=await rr.json();if(data.code!=="Ok"||!data.routes?.length)throw Error("Rota rodoviária não encontrada.");
+  const km=data.routes[0].distance/1000;
+  // Estimativa conservadora para viagens exclusivas: considera retorno sem carga.
+  const chargedKm=km*2,total=Math.max(MINIMUM_FARE,chargedKm*RATE_PER_KM);
+  $("price").textContent=money(total);
+  $("distance").textContent=`Ida: ${km.toFixed(1).replace(".",",")} km • ${stops.length} parada(s) • cálculo de referência considerando retorno.`;
+  $("formula").textContent=`${chargedKm.toFixed(1).replace(".",",")} km considerados × R$ 2,50/km • mínimo R$ 25,00.`;
+  const msg=`Olá! Quero confirmar um orçamento com a GS EXPRESS.\nRota: ${places.join(" → ")}\nEncomenda: ${$("kind").value}\nPrazo: ${$("urgency").value}\nDistância estimada de ida: ${km.toFixed(1)} km\nEstimativa com retorno considerado: ${money(total)}\nPodem confirmar disponibilidade e valor final?`;
+  $("whatsappQuote").href="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg);
+ }catch(e){$("price").textContent="R$ —";$("error").textContent=e.message||"Erro ao calcular. Tente novamente."}
+});
+$("trackBtn").addEventListener("click",e=>{const code=$("tracking").value.trim();if(!code){e.preventDefault();$("tracking").focus();return}e.currentTarget.href="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent("Olá! Gostaria de consultar o andamento da minha entrega. Código/identificação: "+code)});
+$("form-empresa").addEventListener("submit",e=>{
+ e.preventDefault();
+ const msg=`Olá! Tenho interesse em serviços para empresa pela GS EXPRESS.\nEmpresa/responsável: ${$("company").value}\nTelefone: ${$("phone").value}\nCidade/região: ${$("city").value}\nFrequência: ${$("frequency").value}\nNecessidade: ${$("demand").value}`;
+ window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg),"_blank","noopener");
+});
 </script>
 </body></html>

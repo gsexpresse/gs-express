@@ -1,0 +1,31 @@
+GS EXPRESS — atualização profissional do site
+
+Arquivos:
+- index.html
+- logo-gs-express.jpeg
+
+Como publicar:
+1. Abra o repositório gs-express no GitHub.
+2. Substitua o index.html pelo novo arquivo.
+3. Mantenha o arquivo logo-gs-express.jpeg na raiz do repositório.
+4. Aguarde o GitHub Pages atualizar.
+
+Recursos:
+- Layout responsivo para celular e computador.
+- Serviços locais, viagens e atendimento empresarial.
+- Calculadora de rota com até 8 paradas.
+- Formulário de parceria enviado diretamente ao WhatsApp.
+- Consulta manual de entregas via WhatsApp.
+- Link para consultar o perfil da GS EXPRESS no Google.
+
+Observações:
+- A calculadora usa serviços públicos do OpenStreetMap/Nominatim e OSRM; disponibilidade pode variar.
+- A estimativa considera ida e retorno sem carga como referência interna. Confirme sempre o valor final antes de aceitar o serviço.
+- O acompanhamento é manual pelo WhatsApp; rastreamento automático exige backend e banco de dados.
+- A seção de avaliações leva ao perfil/pesquisa pública do Google e não inventa depoimentos.
+- WhatsApp configurado: +55 51 98454-5750.
+
+Atualização adicional:
+- Galeria com três fotos reais enviadas pelo proprietário a partir do perfil Google da GS EXPRESS.
+- Link do Instagram @gs_expresse no menu, hero e contato.
+- As imagens foram recortadas para remover a interface do aplicativo Google e manter a foto.
